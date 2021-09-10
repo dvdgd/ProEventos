@@ -34,7 +34,7 @@
     </tr>
   </thead>
   <tbody class="tbody-eventos" *ngIf="eventos && eventos.length">
-    <tr *ngFor="let evento of eventosFiltrados">
+    <tr *ngFor="let evento of filtrarEventos()">
       <td>
         <img [collapse]="!exibirImg"
           [isAnimated]="true"
